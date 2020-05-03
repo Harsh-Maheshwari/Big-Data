@@ -1,0 +1,1 @@
+SELECT movid, round(avg(rating),1) as r1 FROM rating_data GROUP BY movid ORDER BY r1;

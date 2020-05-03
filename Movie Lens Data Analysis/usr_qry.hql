@@ -1,0 +1,1 @@
+SELECT a.usrid, a.rating , b.tag , c.title , c.genre FROM rating_data a INNER JOIN tag_data b ON  a.usrid = b.usrid and a.movid = b.movid INNER JOIN mov_data c ON a.movid WHERE a.usrid = '${hivevar:usr_id}'; 
